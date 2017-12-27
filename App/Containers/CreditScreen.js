@@ -3,12 +3,10 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { TabViewAnimated, TabBar } from 'react-native-tab-view'
 import {
-  Image,
   ScrollView,
   View,
   Keyboard,
   LayoutAnimation,
-  Platform,
   ImageBackground,
   Dimensions
 } from 'react-native'
@@ -21,15 +19,13 @@ import {
   Left,
   Right,
   Body,
-  Icon,
-  Tabs,
-  Tab
+  Icon
 } from 'native-base'
 
 // import getTheme from '../../native-base-theme/components'
 // import commonTheme from '../../native-base-theme/variables/commonColor'
 // import { Actions as NavigationActions } from 'react-native-router-flux'
-import { Colors, Images } from '../Themes'
+import { Colors } from '../Themes'
 import styles from './Styles/CreditScreenStyles'
 // import Cart from '../Components/Cart'
 import SendGift from '../Components/SendGift'
@@ -213,11 +209,6 @@ class CreditScreen extends React.Component {
   }
 
   render () {
-    const {
-      initialPage
-    } = this.state
-    const iOS = Platform.OS === 'ios'
-    const android = Platform.OS === 'android'
     return (
       <Container style={styles.container}>
         <Header style={styles.header}>
@@ -236,7 +227,7 @@ class CreditScreen extends React.Component {
         <Header hasTabs style={styles.navbar}>
           <Left style={styles.menu}>
             <Button iconLeft transparent>
-              <Icon name="arrow-back" style={{color: Colors.primary}} />
+              <Icon name='arrow-back' style={{color: Colors.primary}} />
             </Button>
           </Left>
           <Body>
@@ -245,37 +236,21 @@ class CreditScreen extends React.Component {
           <Right />
         </Header>
         <ScrollView>
-          <ImageBackground source={{uri: 'https://i.pinimg.com/originals/86/4b/37/864b37aec49aad0e47ef3c034b1e56c5.jpg'}} style={styles.imageContainer} resizeMode="cover">
+          <ImageBackground source={{uri: 'https://i.pinimg.com/originals/86/4b/37/864b37aec49aad0e47ef3c034b1e56c5.jpg'}} style={styles.imageContainer} resizeMode='cover'>
             <Text style={styles.give}>Credit (S$)</Text>
             <Text style={styles.credit}>500.00</Text>
           </ImageBackground>
-          {/* {iOS && */}
-            <TabViewAnimated
-              style={[styles.tabContainer, this.props.style]}
-              navigationState={this.state}
-              renderScene={this._renderScene}
-              renderHeader={this._renderHeader}
-              onIndexChange={this._handleIndexChange}
-              initialLayout={{
-                height: 0,
-                width: Dimensions.get('window').width
-              }}
+          <TabViewAnimated
+            style={[styles.tabContainer, this.props.style]}
+            navigationState={this.state}
+            renderScene={this._renderScene}
+            renderHeader={this._renderHeader}
+            onIndexChange={this._handleIndexChange}
+            initialLayout={{
+              height: 0,
+              width: Dimensions.get('window').width
+            }}
             />
-          {/* } */}
-          {/* {android &&
-            <Tabs
-              initialPage={initialPage}
-              style={{backgroundColor: Colors.snow}}
-              locked
-            >
-              <Tab heading="TOP UP" style={styles.tab}>
-                <Topup months={months} />
-              </Tab>
-              <Tab heading="SEND GIFT" style={styles.tab}>
-                <SendGift giftCards={giftCards} giftCategories={giftCategories} />
-              </Tab>
-            </Tabs>
-          } */}
         </ScrollView>
       </Container>
     )

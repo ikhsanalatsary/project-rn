@@ -2,6 +2,7 @@ import '../Config'
 import DebugConfig from '../Config/DebugConfig'
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
+import SplashScreen from 'react-native-splash-screen'
 import RootContainer from './RootContainer'
 import createStore from '../Redux'
 
@@ -18,6 +19,12 @@ const store = createStore()
  * We separate like this to play nice with React Native's hot reloading.
  */
 class App extends Component {
+  componentDidMount () {
+    // do stuff while splash screen is shown
+    // After having done stuff (such as async tasks) hide the splash screen
+    SplashScreen.hide()
+  }
+
   render () {
     return (
       <Provider store={store}>

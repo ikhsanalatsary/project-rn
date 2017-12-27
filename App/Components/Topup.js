@@ -58,11 +58,11 @@ export default class Topup extends Component {
           <Item regular style={styles.box}>
             <Input
               style={styles.input}
-              keyboardType="default"
-              returnKeyType="next"
-              autoCapitalize="none"
+              keyboardType='default'
+              returnKeyType='next'
+              autoCapitalize='none'
               autoCorrect={false}
-              underlineColorAndroid="transparent"
+              underlineColorAndroid='transparent'
               selectionColor={Colors.primary}
             />
           </Item>
@@ -72,11 +72,11 @@ export default class Topup extends Component {
           <Item regular style={styles.box}>
             <Input
               style={styles.input}
-              keyboardType="default"
-              returnKeyType="next"
-              autoCapitalize="none"
+              keyboardType='default'
+              returnKeyType='next'
+              autoCapitalize='none'
               autoCorrect={false}
-              underlineColorAndroid="transparent"
+              underlineColorAndroid='transparent'
               selectionColor={Colors.primary}
             />
           </Item>
@@ -87,14 +87,14 @@ export default class Topup extends Component {
             <Grid>
               <Col style={{marginRight: 10}}>
                 <Picker
-                  mode="dropdown"
-                  placeholder="Month"
+                  mode='dropdown'
+                  placeholder='Month'
                   note={false}
                   renderHeader={(backAction) => (
                     <Header>
                       <Left>
                         <Button transparent onPress={backAction}>
-                          <Icon name="arrow-back" />
+                          <Icon name='arrow-back' />
                         </Button>
                       </Left>
                       <Body>
@@ -115,13 +115,13 @@ export default class Topup extends Component {
               <Col>
                 <Item regular>
                   <Input
-                    placeholder="Year"
+                    placeholder='Year'
                     style={styles.input}
-                    keyboardType="default"
-                    returnKeyType="next"
-                    autoCapitalize="none"
+                    keyboardType='default'
+                    returnKeyType='next'
+                    autoCapitalize='none'
                     autoCorrect={false}
-                    underlineColorAndroid="transparent"
+                    underlineColorAndroid='transparent'
                     selectionColor={Colors.primary}
                   />
                 </Item>
@@ -136,24 +136,24 @@ export default class Topup extends Component {
               <Item regular style={styles.box}>
                 <Input
                   style={styles.input}
-                  keyboardType="default"
-                  returnKeyType="next"
-                  autoCapitalize="none"
+                  keyboardType='default'
+                  returnKeyType='next'
+                  autoCapitalize='none'
                   autoCorrect={false}
-                  underlineColorAndroid="transparent"
+                  underlineColorAndroid='transparent'
                   selectionColor={Colors.primary}
                 />
               </Item>
             </Col>
             <Col style={styles.helpWrapper}>
               <PopoverTooltip
-                ref="tooltip"
+                ref='tooltip'
                 buttonComponent={
                   <Button
                     style={styles.help}
                     onPress={() => this.refs.tooltip.toggle()}
                   >
-                    <Icon name="help" />
+                    <Icon name='help' />
                   </Button>
                 }
                 items={[
@@ -175,11 +175,11 @@ export default class Topup extends Component {
           <Item regular style={styles.box}>
             <Input
               style={styles.input}
-              keyboardType="default"
-              returnKeyType="next"
-              autoCapitalize="none"
+              keyboardType='default'
+              returnKeyType='next'
+              autoCapitalize='none'
               autoCorrect={false}
-              underlineColorAndroid="transparent"
+              underlineColorAndroid='transparent'
               selectionColor={Colors.primary}
             />
           </Item>

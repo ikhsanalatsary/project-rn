@@ -108,14 +108,14 @@ class SendGift extends Component {
           </Item>
           <Item style={styles.forPicker}>
             <Picker
-              mode="dropdown"
-              placeholder="All"
+              mode='dropdown'
+              placeholder='All'
               note={false}
               renderHeader={(backAction) => (
                 <Header>
                   <Left>
                     <Button transparent onPress={backAction}>
-                      <Icon name="arrow-back" />
+                      <Icon name='arrow-back' />
                     </Button>
                   </Left>
                   <Body>
@@ -160,14 +160,14 @@ class SendGift extends Component {
           </Item>
           <Item style={styles.forPicker}>
             <Picker
-              mode="dropdown"
-              placeholder="All"
+              mode='dropdown'
+              placeholder='All'
               note={false}
               renderHeader={(backAction) => (
                 <Header>
                   <Left>
                     <Button transparent onPress={backAction}>
-                      <Icon name="arrow-back" />
+                      <Icon name='arrow-back' />
                     </Button>
                   </Left>
                   <Body>
@@ -180,8 +180,8 @@ class SendGift extends Component {
               selectedValue={selectedType}
               onValueChange={this.onTypeChange}
             >
-              <PItem label="Electronic" value="Electronic" />
-              <PItem label="Physical" value="Physical" />
+              <PItem label='Electronic' value='Electronic' />
+              <PItem label='Physical' value='Physical' />
             </Picker>
           </Item>
           <Item stackedLabel style={{...styles.forLabel, ...styles.forLabel1}}>
@@ -190,11 +190,11 @@ class SendGift extends Component {
           <Item regular style={styles.box}>
             <Input
               style={styles.input}
-              keyboardType="default"
-              returnKeyType="next"
-              autoCapitalize="none"
+              keyboardType='default'
+              returnKeyType='next'
+              autoCapitalize='none'
               autoCorrect={false}
-              underlineColorAndroid="transparent"
+              underlineColorAndroid='transparent'
               selectionColor={Colors.primary}
             />
           </Item>
@@ -204,11 +204,11 @@ class SendGift extends Component {
           <Item regular style={styles.box}>
             <Input
               style={styles.input}
-              keyboardType="default"
-              returnKeyType="next"
-              autoCapitalize="none"
+              keyboardType='default'
+              returnKeyType='next'
+              autoCapitalize='none'
               autoCorrect={false}
-              underlineColorAndroid="transparent"
+              underlineColorAndroid='transparent'
               selectionColor={Colors.primary}
             />
           </Item>
@@ -218,14 +218,14 @@ class SendGift extends Component {
           <Item style={{...styles.forPicker, ...styles.forPicker1}}>
             <Left><Text>S$</Text></Left>
             <Picker
-              mode="dropdown"
-              placeholder="All"
+              mode='dropdown'
+              placeholder='All'
               note={false}
               renderHeader={(backAction) => (
                 <Header>
                   <Left>
                     <Button transparent onPress={backAction}>
-                      <Icon name="arrow-back" />
+                      <Icon name='arrow-back' />
                     </Button>
                   </Left>
                   <Body>
@@ -238,10 +238,10 @@ class SendGift extends Component {
               selectedValue={selectedAmount}
               onValueChange={this.onAmountChange}
             >
-              <PItem label="10" value="10" />
-              <PItem label="20" value="20" />
-              <PItem label="50" value="50" />
-              <PItem label="100" value="100" />
+              <PItem label='10' value='10' />
+              <PItem label='20' value='20' />
+              <PItem label='50' value='50' />
+              <PItem label='100' value='100' />
             </Picker>
             <Right />
           </Item>
@@ -252,12 +252,12 @@ class SendGift extends Component {
             <DatePicker
               style={{width: 200}}
               date={date}
-              mode="date"
-              placeholder="MM-DD-YYYY"
-              format="MM-DD-YYYY"
+              mode='date'
+              placeholder='MM-DD-YYYY'
+              format='MM-DD-YYYY'
               minDate={new Date()}
-              confirmBtnText="Confirm"
-              cancelBtnText="Cancel"
+              confirmBtnText='Confirm'
+              cancelBtnText='Cancel'
               customStyles={{
                 dateIcon: {
                   position: 'absolute',

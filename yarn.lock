@@ -4715,6 +4715,10 @@ react-native-easy-grid@0.1.15, react-native-easy-grid@^0.1.15:
   dependencies:
     lodash "^4.11.1"
 
+react-native-fcm@13.3.3:
+  version "13.3.3"
+  resolved "https://registry.yarnpkg.com/react-native-fcm/-/react-native-fcm-13.3.3.tgz#6380d3aec6eb748c36a58355fa68eb0774dc81f8"
+
 react-native-i18n@2.0.10:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/react-native-i18n/-/react-native-i18n-2.0.10.tgz#d22a6136abca1dee07c527f73cd805f9296bddc1"

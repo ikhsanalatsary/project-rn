@@ -31,7 +31,7 @@
     "moment": "git+https://github.com/tqc/moment.git#no-dynamic-import",
     "native-base": "2.3.5",
     "prop-types": "^15.5.10",
-    "querystringify": "0.0.4",
+    "querystringify": "2.0.0",
     "ramda": "0.25.0",
     "react": "16.0.0",
     "react-native": "0.51.0",

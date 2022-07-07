@@ -28,7 +28,7 @@
     "apisauce": "0.14.3",
     "format-json": "^1.0.3",
     "lodash": "^4.17.2",
-    "moment": "git+https://github.com/tqc/moment.git#no-dynamic-import",
+    "moment": "2.29.4",
     "native-base": "2.3.5",
     "prop-types": "^15.5.10",
     "querystringify": "0.0.4",

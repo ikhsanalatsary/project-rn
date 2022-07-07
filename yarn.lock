@@ -3956,7 +3956,12 @@ mockery@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/mockery/-/mockery-2.1.0.tgz#5b0aef1ff564f0f8139445e165536c7909713470"
 
-moment@2.x.x, "moment@git+https://github.com/tqc/moment.git#no-dynamic-import":
+moment@2.29.4:
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
+
+moment@2.x.x:
   version "2.18.1"
   resolved "git+https://github.com/tqc/moment.git#7fb40264e87ff7c8d167c6ccda9aecac70516302"
 

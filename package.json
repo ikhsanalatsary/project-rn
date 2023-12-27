@@ -25,7 +25,7 @@
     "fixcode": "standard --fix"
   },
   "dependencies": {
-    "apisauce": "0.14.3",
+    "apisauce": "3.0.1",
     "format-json": "^1.0.3",
     "lodash": "^4.17.2",
     "moment": "git+https://github.com/tqc/moment.git#no-dynamic-import",
